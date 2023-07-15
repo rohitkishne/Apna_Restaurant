@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    display: flex;
+}
+
+/* LEFT SECTION  */
+.left{
+    width: 25%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.left .logo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid #b1afaf2b;
+    padding-bottom: 20px;
+}
+
+.logo > img{
+    height: 12em;
+}
+
+.logo .menu{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo .slogan{
+    color: red;
+}
+
+.left .quick-Links, .left .about-us{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 45px;
+}
+
+.left .quick-Links{
+    border-bottom: 1px solid #b1afaf2b;
+    padding-bottom: 20px;
+}
+
+.quick-Links > h3, .about-us > h3{
+    text-align: center;
+}
+
+.quick-Links > ol, .about-us > ol{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    letter-spacing: 1px;
+}
+
+
+
+/* RIGHT SECTION */
+.right{
+    width: 75%;
+    height: 100vh;
+    /* background-color: #212020; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.right .top{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 10px 0px;
+    z-index: 1000;
+    position: sticky;
+    top: 0px;
+}
+
+.top .search-dish{
+    border: 2px solid #6964642b;
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;  
+    border-radius: 5px;
+    background-color: #3e3e3e;
+}
+
+.search-dish .food-item{
+    width: 95%;
+    height: 3em;
+    outline: none;
+    border: none;
+    /* background: #212020; */
+    background-color: #3e3e3e;
+    border-radius: 5px;
+    padding: 0px 10px;
+    color: #fffafac9;
+}
+
+.search-dish > img{
+    height: 1.5em;
+}
+
+.top .signup, .top .login{
+    width: 12%;
+    height: 3em;
+    border: none;
+    outline: none;
+    background: red;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+.middle{
+    width: 100%;
+}
+
+.middle > img{
+    width: 98%;
+}
+
+.menu-title{
+    width: 100%;
+    padding: 10px;
+}
+
+.bottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.bottom .food-item-card{
+    height: 18em;
+    background-color: #1c1c1cad;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.food-item-card .food-image{
+    width: 100%;
+}
+
+.food-image > img{
+    height: 12em;
+    width: 100%;
+}
+
+.food-item-card .food-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5em;
+}
+
+.food-desc .title-price{
+    width: 80%;
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.food-desc .add-btn{
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    background: #7e7e7e47;
+    cursor: pointer;
+}
+
+.title-price .title{
+    font-size: 20px;
+    font-weight: 600;
+}
